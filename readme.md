@@ -26,7 +26,7 @@ This is a shell script for setting up Laravel Production environment on Ubuntu 1
 1). Pull down the script
 
 ```
-wget https://raw.githubusercontent.com/summerblue/laravel-ubuntu-init/master/deploy.sh
+wget https://raw.githubusercontent.com/zhengjinghua/laravel-ubuntu-init/master/deploy-16.sh
 chmod +x deploy.sh
 ```
 
