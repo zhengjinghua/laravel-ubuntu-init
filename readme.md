@@ -27,12 +27,12 @@ This is a shell script for setting up Laravel Production environment on Ubuntu 1
 
 ```
 wget https://raw.githubusercontent.com/zhengjinghua/laravel-ubuntu-init/master/deploy-16.sh
-chmod +x deploy.sh
+chmod +x deploy-16.sh
 ```
 
 2). Config MySQL password
 
-`vi deploy.sh` edit your password:
+`vi deploy-16.sh` edit your password:
 
 ```
 # Configure
