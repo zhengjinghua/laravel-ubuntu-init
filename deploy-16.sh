@@ -193,6 +193,26 @@ sed -i "s/#START=yes/START=yes/" /etc/default/beanstalkd
 /sbin/mkswap /var/swap.1
 /sbin/swapon /var/swap.1
 
+# fasd
+cd ~ && git clone https://github.com/clvv/fasd.git && cd fasd && make install && echo 'eval "$(fasd --init auto)"' >> ~/.bashrc && source ~/.bashrc
+# tig
+sudo apt-get install tig
+source ~/.bashrc
+
+# 项目常用快捷键
+echo "alias a='fasd -a'" >> ~/.bashrc
+echo "alias s='fasd -si'" >> ~/.bashrc
+echo "alias d='fasd -d'" >> ~/.bashrc
+echo "alias f='fasd -f'" >> ~/.bashrc
+echo "alias sd='fasd -sid'" >> ~/.bashrc
+echo "alias sf='fasd -sif'" >> ~/.bashrc
+echo "alias z='fasd_cd -d'" >> ~/.bashrc
+echo "alias zz='fasd_cd -d -i'" >> ~/.bashrc
+echo "alias gs=\"git status\"" >> ~/.bashrc
+echo "alias gpl=\"git pull\"" >> ~/.bashrc
+echo "alias gpld=\"git pull origin develop\"" >> ~/.bashrc
+echo "alias gco=\"git checkout\"" >> ~/.bashrc
+
 clear
 echo "--"
 echo "--"
