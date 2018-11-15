@@ -52,7 +52,7 @@ wget http://mirrors.163.com/.help/sources.list.trusty -O /etc/apt/sources.list
 Run the shell script:
 
 ```
-./deploy.sh
+./deploy-16.sh
 ```
 
 > Note: You must run as `root`.
